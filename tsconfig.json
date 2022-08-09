@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "preserve",
+    "lib": ["dom", "es2015", "es2017"],
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowJs": true,
+    "removeComments": false,
+    "baseUrl": ".",
+    "paths": {
+      "@Assets/*": ["src/assets/*"],
+      "@Components/*": ["src/components/*"],
+      "@CustomTypes/*": ["src/types/*"],
+      "@Constants/*": ["src/constants/*"],
+      "@Utils/*": ["src/utils/*"],
+      "@App/*": ["src/app/*"],
+      "@Store/*" : ["src/store/*"],
+      "@Pages/*" : ["src/pages/*"],
+      "@Templates/*": ["src/templates/*"],
+      "@Views/*":["src/views/*"],
+      "@Theme/*" : ["src/theme/*"],
+      "@Services/*": ["src/services/*"],
+      "@/*": ["/*"]
+    }
+  },
+  "include": [
+    "./src/**/*",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.d.ts",
+    "postcss.config.js", 
+    "static/fonts" 
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

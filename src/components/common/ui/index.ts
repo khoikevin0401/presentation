@@ -1,0 +1,8 @@
+export { Input } from "@Components/common/ui/input/input.component"
+export { Text } from "@Components/common/ui/text/text.component"
+export { ButtonCustom } from "@Components/common/ui/button/button.component"
+export { Wrapper } from "@Components/common/ui/styled-component/wrapper.styled"
+export { Container } from "@Components/common/ui/styled-component/container.styled"
+export { Center } from "@Components/common/ui/styled-component/center.styled"
+export { SearchAuto } from "@Components/common/ui/styled-component/search-auto.styled"
+export { SearchUpdate } from "@Components/common/ui/styled-component/search-update.styled"
