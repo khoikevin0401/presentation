@@ -1,0 +1,11 @@
+
+ul {
+    list-style: none;
+    border-radius: 5px;
+}
+ul li {
+    padding: 8px;
+}
+ul li:hover {
+    background-color: darkgrey;
+}
