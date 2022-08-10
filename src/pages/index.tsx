@@ -5,6 +5,7 @@ import { ApolloProviderServer } from "@Services/apollo/apollo.services"
 
 import theme from "@Components/common/theme/theme"
 import PresentationUseRef from "@Templates/presentation-useRef"
+import CounterUserReducer from "@Templates/useReducer/CounterUserReducer"
 
 const IndexPage = () => {
   return (
@@ -12,6 +13,7 @@ const IndexPage = () => {
       <ChakraProvider theme={theme}>
         <Router>
           <PresentationUseRef path="/presentation-useref" default/>
+          <CounterUserReducer path="/usereducer" />
         </Router>
       </ChakraProvider>
     </ApolloProviderServer>
