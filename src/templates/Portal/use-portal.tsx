@@ -25,7 +25,7 @@ const Portal = ({ children }: any) => {
     // create div
     mount?.appendChild(element)
 
-    // remove div 
+    // remove div
     return () => mount?.removeChild(element)
   }, [element, mount])
   return createPortal(children, element)
@@ -35,14 +35,17 @@ const Table2 = () => {
   const [select, setSelect] = useState("Select")
   const [display, setDisplay] = useState("none")
   const [opacity, setOpacity] = useState(0)
+  const [select1, setSelect1] = useState("Select")
+  const [display1, setDisplay1] = useState("none")
+  const [opacity1, setOpacity1] = useState(0)
 
   useEffect(() => {
-    if (display === "none") {
-      setOpacity(0)
-    } else {
-      setOpacity(1)
-    }
+    display === "none" ? setOpacity(0) : setOpacity(1)
   }, [display])
+
+  useEffect(() => {
+    display1 === "none" ? setOpacity1(0) : setOpacity1(1)
+  }, [display1])
 
   return (
     <Box w={"60%"} m={"auto"} py={"25px"}>
@@ -67,7 +70,78 @@ const Table2 = () => {
             <Tr>
               <Td>feet</Td>
               <Td>centimetres (cm)</Td>
-              <Td isNumeric>30.48</Td>
+              <Td w={"310px"}>
+                <Box position={"relative"}>
+                  <Box
+                    border={"1px solid gray"}
+                    borderRadius={"5px"}
+                    display={"flex"}
+                    justifyContent={"space-between"}
+                    h={"35px"}
+                    w={"300px"}
+                    p={"8px"}
+                    onClick={() => {
+                      display1 === "none"
+                        ? setDisplay1("block")
+                        : setDisplay1("none")
+                    }}
+                    cursor={"pointer"}
+                  >
+                    <Text>{select1}</Text>
+                    <ChevronDownIcon />
+                  </Box>
+                  <Portal>
+                    <Box
+                      display={display1}
+                      position={"absolute"}
+                      top={"295px"}
+                      left={"1212px"}
+                      w={"300px"}
+                      border={"1px solid gray"}
+                      borderRadius={"5px"}
+                      py={"8px"}
+                      opacity={opacity1}
+                      transition={"opacity .5s linear"}
+                      bgColor={"#f7fafc"}
+                    >
+                      <ul>
+                        <Box
+                          onClick={() => {
+                            setSelect1("Download")
+                            setDisplay1("none")
+                          }}
+                        >
+                          <li>Download</li>
+                        </Box>
+                        <Box
+                          onClick={() => {
+                            setSelect1("Create a Copy")
+                            setDisplay1("none")
+                          }}
+                        >
+                          <li>Create a Copy</li>
+                        </Box>
+                        <Box
+                          onClick={() => {
+                            setSelect1("Mark as Draft")
+                            setDisplay1("none")
+                          }}
+                        >
+                          <li>Mark as Draft</li>
+                        </Box>
+                        <Box
+                          onClick={() => {
+                            setSelect1("Delete")
+                            setDisplay1("none")
+                          }}
+                        >
+                          <li>Delete</li>
+                        </Box>
+                      </ul>
+                    </Box>
+                  </Portal>
+                </Box>
+              </Td>
             </Tr>
             <Tr>
               <Td>yards</Td>
@@ -95,12 +169,11 @@ const Table2 = () => {
                     <Box
                       display={display}
                       position={"absolute"}
-                      top={"335px"}
+                      top={"363px"}
                       left={"756px"}
-                      w={"405px"}
+                      w={"408px"}
                       border={"1px solid gray"}
                       borderRadius={"5px"}
-                      mt={"10px"}
                       py={"8px"}
                       opacity={opacity}
                       transition={"opacity .5s linear"}
