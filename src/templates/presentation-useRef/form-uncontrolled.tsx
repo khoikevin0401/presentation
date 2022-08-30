@@ -18,6 +18,9 @@ const FormUncontrolled: FC = () => {
     console.log(data)
   }
 
+  console.log("render");
+  
+
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(submitForm)}>
