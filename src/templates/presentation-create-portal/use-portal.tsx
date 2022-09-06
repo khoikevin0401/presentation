@@ -48,7 +48,7 @@ const Table2 = () => {
   }, [display1])
 
   return (
-    <Box w={"60%"} m={"auto"} py={"25px"}>
+    <Box w={"62%"} m={"auto"} py={"25px"}>
       <Text fontSize={"25px"} fontWeight={"bold"} textAlign={"center"}>
         Select box in table use Portal
       </Text>
@@ -95,7 +95,7 @@ const Table2 = () => {
                       display={display1}
                       position={"absolute"}
                       top={"295px"}
-                      left={"1212px"}
+                      left={"920px"}
                       w={"300px"}
                       border={"1px solid gray"}
                       borderRadius={"5px"}
@@ -170,7 +170,7 @@ const Table2 = () => {
                       display={display}
                       position={"absolute"}
                       top={"363px"}
-                      left={"756px"}
+                      left={"464px"}
                       w={"408px"}
                       border={"1px solid gray"}
                       borderRadius={"5px"}

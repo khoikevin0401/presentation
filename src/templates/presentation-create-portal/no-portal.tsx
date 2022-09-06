@@ -29,7 +29,7 @@ const Table1 = () => {
   }, [display])
 
   return (
-    <Box w={"60%"} m={"auto"} py={"25px"}>
+    <Box w={"62%"} m={"auto"} py={"25px"}>
       <Text fontSize={"25px"} fontWeight={"bold"} textAlign={"center"}>
         Select box in table without use Portal
       </Text>
