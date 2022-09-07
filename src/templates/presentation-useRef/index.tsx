@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from "react"
+import React, { FC, FormEvent, useState } from "react"
 import { Box, Select } from "@chakra-ui/react"
 import { RouteComponentProps } from "@reach/router"
 
@@ -7,7 +7,7 @@ import FormUncontrolled from "./form-uncontrolled"
 import FormControlled from "./form-controlled"
 import FocusInput from "./focus-input"
 
-const PresentationUseRef: React.FC<RouteComponentProps> = () => {
+const PresentationUseRef: FC = () => {
   const [option, setOption] = useState<number>(0)
 
   const changeOption = (e: FormEvent) => {

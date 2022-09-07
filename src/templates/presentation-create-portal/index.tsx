@@ -3,12 +3,12 @@ import {
   Box,
   Select,
 } from "@chakra-ui/react"
-import { RouteComponentProps } from "@reach/router"
+
 import Table1 from "./no-portal"
 import Table2 from "./use-portal"
 
 
-const DemoPortal: FC<RouteComponentProps> = () => {
+const DemoPortal: FC = () => {
   const [value, setValue] = useState<string>("1")
 
   const onChangeValue = (e: any) => {
@@ -17,7 +17,7 @@ const DemoPortal: FC<RouteComponentProps> = () => {
 
   return (
     <Box>
-      <Box m={"20px"} display={"flex"}>
+      <Box p={"20px"} display={"flex"}>
         <Select
           name="page"
           id="page"

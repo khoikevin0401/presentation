@@ -8,13 +8,12 @@ import {
   OrderedList,
   Text,
 } from "@chakra-ui/react"
-import { RouteComponentProps } from "@reach/router"
 
 import { Wrapper } from "@Components/common/ui"
 import { initialToDos, TYPE_ACTION, ToDoState, makeId } from "./useReducer.type"
 import { todoReducer } from "./example-reducer"
 
-const PresentationUseReducer: FC<RouteComponentProps> = () => {
+const PresentationUseReducer: FC = () => {
   const [toDos, dispatch] = useReducer(todoReducer, initialToDos)
 
   const refInput = useRef(null)
