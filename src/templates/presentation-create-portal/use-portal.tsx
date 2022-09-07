@@ -48,7 +48,7 @@ const Table2 = () => {
   }, [display1])
 
   return (
-    <Box w={"62%"} m={"auto"} py={"25px"}>
+    <Box w={"92%"} m={"auto"} py={"25px"}>
       <Text fontSize={"25px"} fontWeight={"bold"} textAlign={"center"}>
         Select box in table use Portal
       </Text>
@@ -56,21 +56,18 @@ const Table2 = () => {
         <Table variant="simple">
           <Thead>
             <Tr>
-              <Th>To convert</Th>
               <Th>into</Th>
               <Th isNumeric>multiply by</Th>
             </Tr>
           </Thead>
           <Tbody>
             <Tr>
-              <Td>inches</Td>
               <Td>millimetres (mm)</Td>
               <Td isNumeric>25.4</Td>
             </Tr>
             <Tr>
-              <Td>feet</Td>
               <Td>centimetres (cm)</Td>
-              <Td w={"310px"}>
+              <Td w={"260px"}>
                 <Box position={"relative"}>
                   <Box
                     border={"1px solid gray"}
@@ -78,7 +75,7 @@ const Table2 = () => {
                     display={"flex"}
                     justifyContent={"space-between"}
                     h={"35px"}
-                    w={"300px"}
+                    w={"260px"}
                     p={"8px"}
                     onClick={() => {
                       display1 === "none"
@@ -94,9 +91,9 @@ const Table2 = () => {
                     <Box
                       display={display1}
                       position={"absolute"}
-                      top={"295px"}
-                      left={"920px"}
-                      w={"300px"}
+                      top={"310px"}
+                      left={"375px"}
+                      w={"260px"}
                       border={"1px solid gray"}
                       borderRadius={"5px"}
                       py={"8px"}
@@ -144,8 +141,7 @@ const Table2 = () => {
               </Td>
             </Tr>
             <Tr>
-              <Td>yards</Td>
-              <Td w={"410px"}>
+              <Td w={"260px"}>
                 <Box position={"relative"}>
                   <Box
                     border={"1px solid gray"}
@@ -153,7 +149,7 @@ const Table2 = () => {
                     display={"flex"}
                     justifyContent={"space-between"}
                     h={"35px"}
-                    w={"408px"}
+                    w={"260px"}
                     p={"8px"}
                     onClick={() => {
                       display === "none"
@@ -169,9 +165,9 @@ const Table2 = () => {
                     <Box
                       display={display}
                       position={"absolute"}
-                      top={"363px"}
-                      left={"464px"}
-                      w={"408px"}
+                      top={"380px"}
+                      left={"52px"}
+                      w={"260px"}
                       border={"1px solid gray"}
                       borderRadius={"5px"}
                       py={"8px"}
@@ -222,7 +218,6 @@ const Table2 = () => {
           </Tbody>
           <Tfoot>
             <Tr>
-              <Th>To convert</Th>
               <Th>into</Th>
               <Th isNumeric>multiply by</Th>
             </Tr>

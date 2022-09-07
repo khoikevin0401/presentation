@@ -29,7 +29,7 @@ const Table1 = () => {
   }, [display])
 
   return (
-    <Box w={"62%"} m={"auto"} py={"25px"}>
+    <Box w={"92%"} m={"auto"} py={"25px"}>
       <Text fontSize={"25px"} fontWeight={"bold"} textAlign={"center"}>
         Select box in table without use Portal
       </Text>
@@ -37,25 +37,21 @@ const Table1 = () => {
         <Table variant="simple">
           <Thead>
             <Tr>
-              <Th>To convert</Th>
               <Th>into</Th>
               <Th isNumeric>multiply by</Th>
             </Tr>
           </Thead>
           <Tbody>
             <Tr>
-              <Td>inches</Td>
               <Td>millimetres (mm)</Td>
               <Td isNumeric>25.4</Td>
             </Tr>
             <Tr>
-              <Td>feet</Td>
               <Td>centimetres (cm)</Td>
               <Td isNumeric>30.48</Td>
             </Tr>
             <Tr>
-              <Td>yards</Td>
-              <Td w={"410px"} >
+              <Td w={"260px"} >
                 <Box position={"relative"}>
                   <Box
                     border={"1px solid gray"}
@@ -63,7 +59,7 @@ const Table1 = () => {
                     display={"flex"}
                     justifyContent={"space-between"}
                     h={"35px"}
-                    w={"410px"}
+                    w={"260px"}
                     p={"8px"}
                     onClick={() => {
                       display === "none"
@@ -78,7 +74,7 @@ const Table1 = () => {
                   <Box
                     display={display}
                     position={"absolute"}
-                    w={"410px"}
+                    w={"260px"}
                     border={"1px solid gray"}
                     borderRadius={"5px"}
                     mt={"10px"}
@@ -129,7 +125,6 @@ const Table1 = () => {
           </Tbody>
           <Tfoot>
             <Tr>
-              <Th>To convert</Th>
               <Th>into</Th>
               <Th isNumeric>multiply by</Th>
             </Tr>
