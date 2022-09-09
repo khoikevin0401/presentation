@@ -15,7 +15,7 @@ const HomePage: FC<RouteComponentProps> = () => {
   return (
     <Box>
       <Box position={"relative"}>
-        <Select position={"absolute"} right={"50px"} top={"50px"} w={"300px"} mb={"40px"} value={option} onChange={changeOption}>
+        <Select bg={"white"} position={"absolute"} right={"20px"} top={"20px"} w={"200px"} mb={"40px"} value={option} onChange={changeOption}>
           <option value="0">useRef</option>
           <option value="1">useReducer</option>
           <option value="2">createPortal</option>
