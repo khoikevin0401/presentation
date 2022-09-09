@@ -92,7 +92,7 @@ const Table2 = () => {
                       display={display1}
                       position={"absolute"}
                       top={"310px"}
-                      left={"375px"}
+                      left={"506px"}
                       w={"260px"}
                       border={"1px solid gray"}
                       borderRadius={"5px"}
@@ -166,7 +166,7 @@ const Table2 = () => {
                       display={display}
                       position={"absolute"}
                       top={"380px"}
-                      left={"52px"}
+                      left={"62px"}
                       w={"260px"}
                       border={"1px solid gray"}
                       borderRadius={"5px"}
