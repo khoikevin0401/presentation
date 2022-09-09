@@ -21,7 +21,7 @@ const Portal = ({ children }: any) => {
   const element = document.createElement("div")
 
   // create portal
-  useEffect(() => {
+  useEffect((): any => {
     // create div
     mount?.appendChild(element)
 
